@@ -4,3 +4,52 @@ body,
 body * {
   box-sizing: border-box;
 }
+
+body { margin: 0 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  div.datecontainer {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/dateBackground.jpg");
+    box-shadow: inset 0 0 0 2000px rgba(58, 58, 58, 0.596);
+    background-size: cover;
+    color: white;
+    div {
+      margin: 30px;
+      span {
+        font-size: large;
+        font-weight: bold;
+      }
+    }
+  }
+  div.comming {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20vh 20px 20px 20px;
+    p {
+      max-width: 600px;
+    }
+    button {
+      border-radius: 25px;
+      border: none;
+      padding: 10px 25px;
+    }
+    footer i {
+      padding: 20px;
+    }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
